@@ -111,3 +111,16 @@ ul {
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+@media all and (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+    .top .middle {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 50%;
+      width: 99%;
+    }
+  }
