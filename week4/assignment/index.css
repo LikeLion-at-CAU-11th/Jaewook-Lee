@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Noto+Sans+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@700&display=swap');
+
+html,
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-height: 300vh;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: lavender;
+    width: 90vw;
+    height: 280vh;
+    align-items: center;
+  }
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    flex-basis: 30%;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    flex-basis: 30%;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 85%;
+    flex-basis: 30%;
+}
+
+.photo {
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.content {
+    flex-basis: 500px;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+.title {
+    font-size: x-large;
+    color: purple;
+    font-family: 'Changa One', cursive;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: larger;
+    font-family: 'Nanum Brush Script', cursive;
+    text-align: center;
+}
+
+ul {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.project-title {
+    height: 18%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-title-font {
+    font-family: 'Changa One', cursive;
+    color: purple;
+    text-align: center;
+}
+
+.project-content {
+    height: 72%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-content-font {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media all and (max-width: 767px) {
+    .container {
+      width: 100%;
+    }
+    .top .middle {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 50%;
+      width: 99%;
+    }
+  }
