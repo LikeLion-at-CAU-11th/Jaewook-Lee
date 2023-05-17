@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.bttn {
+  all: unset;
+  margin: 10px 0;
+
+  background-color: #333399;
+  color: white;
+
+  padding: 10px;
+  border-radius: 24px;
+}
+
+#bttn2 {
+  margin-left: 10px;
+  justify-content: right;
+  align-items: flex-start;
+  border-radius: 0%;
+  background-color: white;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  margin: 10px 0;
+  margin: 10px;
+  padding-right: 20px;
+  background-color: #cceeff;
+}
+
+img {
+  width: 400px;
+}
+
+.list2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 50%;
+  margin: 10px 0;
+  margin: 10px;
+  padding-right: 20px;
+  background-color: beige;
+}
+
+@media all and (max-width: 950px) {
+  #container {
+    width: 95%;
+  }
+  #list,
+  #list2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    width: 99%;
+    gap: 10px;
+  }
+  img {
+    margin-top: 20px;
+  }
+}
