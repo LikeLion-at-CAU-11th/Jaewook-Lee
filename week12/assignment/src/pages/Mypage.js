@@ -1,5 +1,6 @@
-import React from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { getMypage } from "../apis/mypage";
+import { useNavigate } from "react-router-dom";
 
 const Mypage = () => {
   const [data, setData] = useState();
@@ -22,7 +23,12 @@ const Mypage = () => {
       });
   }, []);
   if (loading) return <div>로딩중...</div>;
-  return <div>Mypage</div>;
+  return (
+    <div>
+      <div>{data?.name}</div>
+      <div>{data?.age}</div>
+    </div>
+  );
 };
 
 export default Mypage;
